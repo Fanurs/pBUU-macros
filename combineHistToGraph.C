@@ -78,7 +78,7 @@ void combineHistToGraph(TString lowerFilename, TString higherFilename) {
       targetSym[iFile] += TString(targ(1, 1));
       targetA[iFile] = TString(targ(2, targ.Length() - 2)).Atoi();
     } else
-      targetA[iFile] = TString(proj(1, proj.Length() - 1)).Atoi();
+      targetA[iFile] = TString(targ(1, targ.Length() - 1)).Atoi();
 
     auto energy = ((TObjString *) array -> At(2)) -> String();
     beamKE[iFile] = TString(energy(6, energy.Length() - 6)).Atoi();
