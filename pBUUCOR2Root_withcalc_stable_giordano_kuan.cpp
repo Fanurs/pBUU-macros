@@ -436,7 +436,7 @@ Int_t pBUUCOR2Root_withcalc_stable_giordano_kuan(string folder = "")
 
       flag = false; //default false
 
-      if(ipid==15 || ipid==13){ // write pi+ and pi- 
+      if(ipid==15 || ipid==13 || ipid==14){ // write pi+ and pi- and pi0
         p->cd();
         pure->Fill();
         derived->Fill();
